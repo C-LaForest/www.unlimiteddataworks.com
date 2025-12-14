@@ -3,177 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Fractional CTO</title>
+  <title>Fractional CTO for Healthcare | Craig LaForest</title>
+  <meta name="description" content="Get the technology leadership you need. Craig LaForest helps healthcare organizations create and execute a winning technology strategy.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
   <style>
-    /* Base styles */
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f8fafc;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 600px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      padding: 32px 24px;
-    }
-    header {
-      background: #1e293b;
-      color: #fff;
-      padding: 18px 0;
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      font-size: 1.1em;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #38bdf8;
-    }
-    h1 {
-      font-size: 2.1em;
-      margin-bottom: 0.2em;
-      color: #1e293b;
-      text-align: center;
-    }
-    .cta-section {
-      text-align: center;
-      margin-bottom: 32px;
-    }
-    .btn-primary {
-      background: #2563eb;
-      color: #fff;
-      padding: 16px 36px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1.1em;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(37,99,235,0.08);
-      transition: background 0.2s;
-      margin-bottom: 12px;
-      display: inline-block;
-    }
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-    .cta-desc {
-      color: #475569;
-      font-size: 1em;
-      margin-bottom: 0;
-    }
-    form {
-      margin-top: 32px;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    label {
-      font-weight: 500;
-      color: #334155;
-    }
-    input, textarea {
-      padding: 10px 12px;
-      border: 1px solid #cbd5e1;
-      border-radius: 5px;
-      font-size: 1em;
-      background: #f1f5f9;
-      transition: border 0.2s;
-    }
-    input:focus, textarea:focus {
-      border-color: #2563eb;
-      outline: none;
-    }
-    textarea {
-      min-height: 90px;
-      resize: vertical;
-    }
-    .btn-secondary {
-      background: #64748b;
-      color: #fff;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background 0.2s;
-      margin-top: 8px;
-      align-self: flex-start;
-    }
-    .btn-secondary:hover {
-      background: #475569;
-    }
-    @media (max-width: 700px) {
-      .container {
-        padding: 18px 6vw;
-      }
-      nav {
-        gap: 18px;
-      }
+    body { font-family: 'Roboto', Arial, sans-serif; margin:0; background:#f8fafc; color:#222; }
+    header { background:#0a2540; color:#fff; padding:24px 0 12px 0; }
+    nav { display:flex; justify-content:center; gap:32px; }
+    nav a { color:#fff; text-decoration:none; font-weight:700; font-size:1.1em; padding:8px 12px; border-radius:4px; transition:background 0.2s; }
+    nav a:hover { background:#174ea6; }
+    .hero { text-align:center; padding:64px 16px 32px 16px; background:#e3f0fa; }
+    .hero h1 { font-size:2.5em; margin-bottom:0.3em; color:#0a2540; }
+    .hero p { font-size:1.3em; margin-bottom:1.5em; color:#174ea6; }
+    .cta-btn { background:#174ea6; color:#fff; padding:16px 36px; border:none; border-radius:6px; font-size:1.1em; font-weight:700; cursor:pointer; transition:background 0.2s; }
+    .cta-btn:hover { background:#0a2540; }
+    .benefits { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; margin:48px auto 32px auto; max-width:900px; }
+    .benefit { background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04); padding:28px 20px; text-align:center; }
+    .benefit h3 { color:#174ea6; margin-bottom:0.5em; }
+    .results { background:#fff; max-width:900px; margin:32px auto; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.04); padding:32px 24px; }
+    .results h2 { color:#0a2540; margin-bottom:0.7em; }
+    .results-list { display:flex; flex-wrap:wrap; gap:32px; justify-content:center; }
+    .result-item { flex:1 1 220px; min-width:220px; text-align:center; }
+    .result-item strong { font-size:2em; color:#174ea6; }
+    .about-preview { max-width:900px; margin:48px auto 32px auto; background:#e3f0fa; border-radius:8px; padding:32px 24px; }
+    .about-preview h2 { color:#0a2540; }
+    .about-preview p { color:#174ea6; }
+    footer { background:#0a2540; color:#fff; text-align:center; padding:24px 0 12px 0; margin-top:48px; }
+    @media (max-width:600px) {
+      .benefits, .results-list { grid-template-columns:1fr; flex-direction:column; gap:16px; }
+      .hero { padding:32px 8px 24px 8px; }
+      .about-preview, .results { padding:20px 8px; }
     }
   </style>
 </head>
 <body>
   <header>
     <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/services">Services</a>
-      <a href="/contact" aria-current="page">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
-    <div class="container">
-      <h1>Contact</h1>
-      <section class="cta-section">
-        <a class="btn-primary" href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener">
-          Schedule a Call
-        </a>
-        <p class="cta-desc">
-          Book a free, no-obligation call to discuss your technology leadership needs.<br>
-          Prefer email? Use the form below.
-        </p>
-      </section>
-      <form method="post" action="/send-message" autocomplete="on">
-        <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first_name" required autocomplete="given-name">
-        </div>
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last_name" required autocomplete="family-name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required placeholder="How can I help you?"></textarea>
-        </div>
-        <button type="submit" class="btn-secondary">Send Message</button>
-      </form>
+  <section class="hero">
+    <h1>Get the technology leadership you need</h1>
+    <p>I help healthcare organizations create and execute a winning technology strategy designed to reach their goals.</p>
+    <a href="contact.html"><button class="cta-btn">Schedule a Call</button></a>
+  </section>
+  <section class="benefits">
+    <div class="benefit">
+      <h3>Maximum results in minimum time</h3>
+      <p>Accelerate your IT outcomes with proven leadership and efficient execution.</p>
     </div>
-  </main>
+    <div class="benefit">
+      <h3>Technology leader for your team</h3>
+      <p>Gain a trusted advisor who bridges business and technical needs.</p>
+    </div>
+    <div class="benefit">
+      <h3>Achieve your outcome goals with confidence</h3>
+      <p>Move forward knowing your technology strategy is aligned and effective.</p>
+    </div>
+    <div class="benefit">
+      <h3>Stop wasting time and money</h3>
+      <p>Eliminate costly missteps and focus your team on what matters most.</p>
+    </div>
+  </section>
+  <section class="results">
+    <h2>Proven Results</h2>
+    <div class="results-list">
+      <div class="result-item">
+        <strong>99.99%+</strong>
+        <div>System Uptime</div>
+      </div>
+      <div class="result-item">
+        <strong>95%</strong>
+        <div>Downtime Reduction</div>
+      </div>
+      <div class="result-item">
+        <strong>$2.5B+</strong>
+        <div>Annual Transactions Supported</div>
+      </div>
+    </div>
+  </section>
+  <section class="about-preview">
+    <h2>About Craig LaForest</h2>
+    <p>With 15+ years of hands-on experience across every major IT discipline, Craig brings a unique blend of technical depth and executive leadership to healthcare organizations. He specializes in mission-critical clinical systems, ensuring reliability, compliance, and measurable business outcomes.</p>
+    <a href="about.html"><button class="cta-btn" style="background:#0a2540;">Learn More</button></a>
+  </section>
+  <footer>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="margin-top:12px;">&copy; 2025 Craig LaForest. All rights reserved.</div>
+  </footer>
 </body>
 </html>
