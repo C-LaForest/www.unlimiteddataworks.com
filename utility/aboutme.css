@@ -108,6 +108,33 @@ hr.solid {
   border-top: 1px solid #1B365D;
   width: 100%;
 }
+.technical-expertise-subsection {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  border-radius: 6px;
+}
+.aiml-capabilities {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.aiml-capabilities li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.aiml-capabilities strong {
+  color: #343a40;
+  font-weight: 600;
+}
+.aiml-positioning {
+  margin-top: 1.5rem;
+  font-style: italic;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+  padding-top: 1rem;
+}
+
 /**/
 /* About Me page-specific styles - Gas Utility Color Scheme */
 /*
