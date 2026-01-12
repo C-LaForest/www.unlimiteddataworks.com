@@ -74,6 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
   if (showMenu) {
     showIndustryMenu();
     // Attach event listeners for selection buttons
+    document.getElementById('select-research').addEventListener('click', function() {
+      setIndustryPreference('medical-research');
+      redirectToIndustry('medical-research');
+    });
     document.getElementById('select-healthcare').addEventListener('click', function() {
       setIndustryPreference('healthcare');
       redirectToIndustry('healthcare');
@@ -86,14 +90,14 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // If user has a preference (healthcare or utility), redirect to it
-  if (industry === 'healthcare' || industry === 'utility') {
+  if (industry === 'medical-research' || industry === 'healthcare' || industry === 'utility') {
     redirectToIndustry(industry);
     return;
   }
   
   // If no cookie is set, default to healthcare
-  setIndustryPreference('healthcare');
-  redirectToIndustry('healthcare');
+  setIndustryPreference('medical-research');
+  redirectToIndustry('medical-research');
 });
 
 // Enhanced clearIndustryPreference for "Change Industry" functionality
